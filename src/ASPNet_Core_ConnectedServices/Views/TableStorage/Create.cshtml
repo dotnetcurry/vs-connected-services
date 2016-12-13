@@ -1,0 +1,38 @@
+﻿@model ASPNet_Core_ConnectedServices.Models.Book
+
+<form asp-controller="TableStorage" asp-action="Create" method="post">
+    <table class="table table-striped table-bordered table-bordered">
+        <tr>
+            <td>Book Name</td>
+            <td>
+                <input type="text" asp-for="BookName" class="form-control"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Author</td>
+            <td>
+                <input type="text" asp-for="Author" class="form-control"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Publisher</td>
+            <td>
+                <input type="text" asp-for="Publisher" class="form-control"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>
+                <input type="text" asp-for="Price" class="form-control"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" class="btn btn-success" />
+            </td>
+            <td>
+                <input type="reset" class="btn btn-default" />
+            </td>
+        </tr>
+    </table>
+</form>

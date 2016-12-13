@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ASPNet_Core_ConnectedServices.Models.Book>
+
+<a asp-controller="TableStorage" asp-action="Create">Create New</a>
+<table class="table table-striped table-bordered table-condensed">
+    <thead>
+        <tr>
+            <td>Book Id</td>
+            <td>Book Name</td>
+            <td>Author</td>
+            <td>Publisher</td>
+            <td>Price</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.BookId</td>
+                <td>@item.BookName</td>
+                <td>@item.Author</td>
+                <td>@item.Publisher</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
